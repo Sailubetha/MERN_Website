@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 font-sans antialiased min-h-screen selection:bg-[#ff5733] selection:text-white;
+  }
+
+  h1, h2, h3, .font-cinzel {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+}
+
+/* SAC Custom Orange Accent Utilities */
+.bg-sac-orange {
+  background-color: #ff5733;
+}
+
+.text-sac-orange {
+  color: #ff5733;
+}
+
+.border-sac-orange {
+  border-color: #ff5733;
+}
+
+.hover-bg-sac-orange:hover {
+  background-color: #e04826;
+}
+
+/* Event Status Card Themes grounded in SAC white card design */
+.sac-card {
+  @apply bg-white rounded-2xl border border-slate-100 shadow-md hover:shadow-xl transition-all duration-300;
+}
+
+.theme-upcoming-sac {
+  @apply bg-white border-l-4 border-l-[#ff5733] border-slate-200 shadow-md hover:shadow-xl hover:border-l-[#e04826] transition-all;
+}
+
+.theme-ongoing-sac {
+  @apply bg-white border-l-4 border-l-emerald-500 border-slate-200 shadow-md hover:shadow-xl transition-all;
+}
+
+.theme-completed-sac {
+  @apply bg-white border-l-4 border-l-slate-400 border-slate-200 shadow-sm hover:shadow-md transition-all;
+}
+
+/* Fixed Header Navbar Shadow */
+.header-shadow {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Image Spotlight Modal Overlay */
+.spotlight-backdrop {
+  background-color: rgba(15, 23, 42, 0.92);
+}
